@@ -1,0 +1,25 @@
+# Docker Compose
+# https://docs.docker.com/compose/
+
+services:
+  # Python
+  app:
+    environment: &environment
+      - STAGE=local
+    image: zsh-wtfutil-app-dev
+    build:
+      args:
+        stage: dev
+
+  check:
+    image: zsh-wtfutil-check-dev
+    environment: *environment
+    build:
+      context: .
+      dockerfile: provision/docker/check/Dockerfile
+      args:
+        stage: dev
+    volumes:
+      - .:/usr/src
+    env_file:
+      - .env
