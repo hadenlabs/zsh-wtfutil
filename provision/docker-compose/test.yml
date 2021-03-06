@@ -1,0 +1,13 @@
+# Docker Compose
+# https://docs.docker.com/compose/
+#
+# Usage: test up
+
+services:
+  app:
+    image: zsh-wtfutil-app-test
+    environment: &environment
+      - STAGE=testing
+    build:
+      args:
+        stage: test
