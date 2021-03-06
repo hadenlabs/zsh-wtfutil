@@ -36,9 +36,9 @@ badges:
   - name: Lint
     image: https://github.com/hadenlabs/zsh-wtfutil/actions/workflows/lint.yml/badge.svg?branch=develop
     url: https://github.com/hadenlabs/zsh-wtfutil/actions
-  - name: "Issues"
-    image: "https://img.shields.io/github/issues/hadenlabs/zsh-wtfutil.svg"
-    url: "https://github.com/hadenlabs/zsh-wtfutil/issues"
+  - name: 'Issues'
+    image: 'https://img.shields.io/github/issues/hadenlabs/zsh-wtfutil.svg'
+    url: 'https://github.com/hadenlabs/zsh-wtfutil/issues'
   - name: 'Latest Release'
     image: 'https://img.shields.io/github/release/hadenlabs/zsh-wtfutil.svg'
     url: 'https://travis-ci.org/hadenlabs/zsh-wtfutil/releases'
@@ -57,9 +57,9 @@ requirements: |-
   ```
 
 installation:
-  - "docs/include/installation/oh-my-zsh.md"
-  - "docs/include/installation/antigen.md"
-  - "docs/include/installation/antibody.md"
+  - 'docs/include/installation/oh-my-zsh.md'
+  - 'docs/include/installation/antigen.md'
+  - 'docs/include/installation/antibody.md'
 
 # How to use this project
 usage: |-
