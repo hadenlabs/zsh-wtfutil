@@ -1,0 +1,98 @@
+wtf:
+  grid:
+    columns: [54, 54, 54, 54, 54]
+    rows: [18, 18, 18, 18]
+  refreshInterval: 1
+  term: 'xterm-256color'
+  mods:
+    github:
+      # WTF_GITHUB_TOKEN from https://github.com/settings/tokens
+      enabled: true
+      position:
+        top: 0
+        left: 0
+        height: 2
+        width: 1
+      refreshInterval: 300
+      customQueries:
+        othersPRs:
+          title: 'Others Pull Requests'
+          filter: 'is:open is:pr -author:luismayta'
+        bugs:
+          title: 'Bugs'
+          filter: 'is:issue is:open label:bug'
+        issues:
+          title: 'Issues'
+          filter: 'is:issue is:open'
+      username: luismayta
+      repositories:
+        - 'luismayta/dotfiles'
+        - 'luismayta/infrastructure'
+        - 'luismayta/luismayta.github.io'
+        - 'hadenlabs/infrastructure'
+    clocks:
+      enabled: true
+      position:
+        top: 0
+        left: 1
+        height: 1
+        width: 1
+      colors:
+        rows:
+          even: 'lightblue'
+          odd: 'white'
+      locations:
+        # From https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+        SanFran: 'America/Los_Angeles'
+        Singapore: 'Asia/Singapore'
+        Peru: 'America/Lima'
+        NewZealand: 'Pacific/Auckland'
+        NewYork: 'America/New_York'
+        UTC: 'Etc/UTC'
+      refreshInterval: 15
+      sort: 'chronological'
+    security:
+      enabled: true
+      position:
+        top: 1
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 3600
+    power:
+      enabled: true
+      position:
+        top: 0
+        left: 2
+        height: 1
+        width: 1
+      refreshInterval: 15
+    weather:
+      position:
+        top: 1
+        left: 2
+        height: 1
+        width: 1
+      cityids:
+        - 6173331
+        - 3128760
+        - 6167865
+        - 6176823
+      colors:
+        current: 'lightblue'
+      enabled: true
+      language: 'EN'
+      refreshInterval: 900
+      tempUnit: 'C'
+      useEmoji: true
+    ipinfo:
+      position:
+        top: 0
+        left: 3
+        height: 1
+        width: 1
+      colors:
+        name: red
+        value: white
+      enabled: true
+      refreshInterval: 150

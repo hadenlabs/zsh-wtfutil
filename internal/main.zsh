@@ -18,4 +18,5 @@ function wtfutil::internal::main::factory {
 
 wtfutil::internal::main::factory
 
+if ! type -p rsync > /dev/null; then wtfutil::internal::rync::install; fi
 if ! type -p wtfutil > /dev/null; then wtfutil::internal::wtfutil::install; fi
