@@ -45,13 +45,13 @@ badges:
 
 # Short description of this project
 description: |-
-  Project for zsh plugin
+  zsh-wtfutil for zsh plugin
 
 requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-  ```{.sourceCode .bash}
+  ```{bash}
   https://github.com/luismayta/zsh-core
   https://github.com/luismayta/zsh-notify
   ```
