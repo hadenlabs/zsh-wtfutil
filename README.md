@@ -16,7 +16,7 @@
 
 [![Lint](https://github.com/hadenlabs/zsh-wtfutil/actions/workflows/lint.yml/badge.svg?branch=develop)](https://github.com/hadenlabs/zsh-wtfutil/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/zsh-wtfutil.svg)](https://github.com/hadenlabs/zsh-wtfutil/issues) [![Latest Release](https://img.shields.io/github/release/hadenlabs/zsh-wtfutil.svg)](https://travis-ci.org/hadenlabs/zsh-wtfutil/releases)
 
-Project for zsh plugin
+zsh-wtfutil for zsh plugin
 
 This project is part of our comprehensive [hadenlabs](https://hadenlabs.com) examples of readme.
 
@@ -28,7 +28,7 @@ MIT is an open-sourced software licensed under the [MIT license](LICENSE.md).
 
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-```{.sourceCode .bash}
+```{bash}
 https://github.com/luismayta/zsh-core
 https://github.com/luismayta/zsh-notify
 ```
@@ -76,57 +76,6 @@ make setup
 ## :page_facing_up: Examples
 
 ### common
-
-````yaml
-
-  ---
-  # name of this project
-  name: readme
-
-  # License of this project
-  license: 'MIT'
-
-  copyright:
-    name: Hadenlabs
-    url: https://hadenlabs.com
-
-  email:
-    support: support@hadenlabs.com
-
-  # Canonical GitHub repo
-  github_repo: hadenlabs/zsh-wtfutil
-
-  # Badges to display
-  badges:
-    - name: 'Build Status'
-      image: 'https://travis-ci.org/hadenlabs/zsh-wtfutil.svg?branch=main'
-      url: 'https://travis-ci.org/hadenlabs/zsh-wtfutil'
-
-  # Short description of this project
-  description: |-
-    examples of readme generator by gotemplate.
-
-  # load examples
-  examples:
-    - 'docs/examples/common.md'
-
-  # How to use this project
-  usage: |-
-
-    ```bash
-      example of use
-    ```
-
-````
-
-### contributors
-
-```yaml
-# Contributors to this project
-contributors:
-  - name: 'Luis Mayta'
-    github: 'luismayta'
-```
 
 ## Help
 
