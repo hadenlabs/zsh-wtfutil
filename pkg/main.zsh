@@ -14,7 +14,6 @@ function wtfutil::pkg::main::factory {
         source "${ZSH_WTFUTIL_PATH}/pkg/linux.zsh"
       ;;
     esac
-
     # shellcheck source=/dev/null
     source "${ZSH_WTFUTIL_PATH}/pkg/alias.zsh"
 
