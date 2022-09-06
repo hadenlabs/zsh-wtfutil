@@ -7,65 +7,59 @@
 # Name of this project
 name: zsh-wtfutil
 
-company:
-  name: hadenlabs
-  description: |-
-    company labs
-  url: https://hadenlabs.com
-  github: https://github.com/hadenlabs
-  email: support@hadenlabs.com
-
-copyright:
-  name: Hadenlabs
-  url: https://hadenlabs.com
-
 email:
   support: support@hadenlabs.com
 
 # Logo for this project
-#logo: docs/logo.png
+# logo: docs/logo.png
 
 # License of this project
-license: 'MIT'
+license: 'LGPL-3.0'
 
 # Canonical GitHub repo
 github_repo: hadenlabs/zsh-wtfutil
 
 # Badges to display
 badges:
+  - name: Latest Release
+    image: https://img.shields.io/github/release/hadenlabs/zsh-wtfutil
+    url: https://github.com/hadenlabs/zsh-wtfutil/releases
   - name: Lint
-    image: https://github.com/hadenlabs/zsh-wtfutil/actions/workflows/lint.yml/badge.svg?branch=develop
-    url: https://github.com/hadenlabs/zsh-wtfutil/actions
-  - name: 'Issues'
-    image: 'https://img.shields.io/github/issues/hadenlabs/zsh-wtfutil.svg'
-    url: 'https://github.com/hadenlabs/zsh-wtfutil/issues'
-  - name: 'Latest Release'
-    image: 'https://img.shields.io/github/release/hadenlabs/zsh-wtfutil.svg'
-    url: 'https://travis-ci.org/hadenlabs/zsh-wtfutil/releases'
-
-# Short description of this project
-description: |-
-  zsh-wtfutil for zsh plugin
+    image: https://img.shields.io/github/workflow/status/hadenlabs/zsh-wtfutil/lint-code
+    url: https://github.com/hadenlabs/zsh-wtfutil/actions?workflow=lint-code
+  - name: pre-commit
+    image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+    url: https://github.com/pre-commit/pre-commit
+  - name: Conventional Commits
+    image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
+    url: https://conventionalcommits.org
+  - name: KeepAChangelog
+    image: https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange
+    url: https://keepachangelog.com
 
 requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-  ```{bash}
-  https://github.com/luismayta/zsh-core
-  https://github.com/luismayta/zsh-notify
-  ```
+  - [zsh-core](https://github.com/hadenlabs/zsh-core)
+  - [gomplate](https://github.com/hairyhenderson/gomplate)
+  - [python](https://www.python.org)
+  - [taskfile](https://github.com/go-task/task)
+
+# Short description of this project
+description: |-
+  zsh-wtfutil for project
 
 installation:
   - 'docs/include/installation/oh-my-zsh.md'
   - 'docs/include/installation/antigen.md'
   - 'docs/include/installation/antibody.md'
 
-# How to use this project
-usage: |-
-  ```bash
-  make setup
-  ```
+usages:
+  - docs/usage.md
+
+include:
+  - 'docs/functions.md'
 
 examples:
   - 'docs/examples/common.md'
